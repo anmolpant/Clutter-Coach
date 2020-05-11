@@ -32,9 +32,18 @@ $(document).ready(function() {
           if (event.which === 13){
           	var todotext = ($(this).val());
           	$(this).val("");
-          	$("ul").append("<li><span>X</span> " + todotext + "</li>")
+          	$("ul").append("<li><span><i class='fas fa-trash-alt'></i></span> " + todotext + "</li>")
           }
 
 
           });
+   $(".fa-calendar-plus").on("click", function(){
+   		$("input[type='text'").fadeToggle();
+
+   });
+   
+
  });
+
+
+
